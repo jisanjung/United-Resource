@@ -2,3 +2,25 @@
 * {
     box-sizing: border-box;
 }
+.no-spacing {
+    margin: 0;
+    padding: 0;
+}
+.horizontal-center {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+.list-style-none {
+    list-style: none;
+}
+/* home */
+#header-logo {
+    width: 200px;
+}
+.no-padding {
+    padding-left: 0;
+}
+#mobile-nav {
+    width: 250px;
+}
