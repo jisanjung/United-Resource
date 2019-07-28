@@ -1,5 +1,6 @@
 /* global */
 * {
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 .no-spacing {
@@ -9,7 +10,11 @@
 .horizontal-center {
     position: relative;
     left: 50%;
-    transform: translate(-50%);
+    transform: translateX(-50%);
+}
+.horizontal-center2 {
+    position: relative;
+    margin: 0 auto;
 }
 .list-style-none {
     list-style: none;
@@ -17,7 +22,25 @@
 .text-decoration {
     text-decoration: none;
 }
-/* home */
+.cursor-pointer:hover {
+    cursor: pointer;
+}
+/* grid */
+.grid-wrap {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(20px, auto);
+}
+/* header */
+.logo {
+    grid-row: 1/5;
+    grid-column: 1/13;
+}
+.menu {
+    grid-row: 5/10;
+    grid-column: 1/13;
+}
 #header-logo {
     width: 200px;
 }
@@ -26,6 +49,20 @@
 }
 #mobile-nav {
     width: 250px;
+    transform: translateY(-150px);
     opacity: 0;
-    transition: 0.5s ease;
 }
+#mobile-nav {
+    transition: 0.5s ease all;
+}
+.links:hover {
+    background-color: #3b3b3b;
+}
+/* showcase */
+#showcase {
+    grid-row: 8/13;
+    grid-column: 1/13;
+    background-image: url(images/blurred_img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
