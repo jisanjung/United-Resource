@@ -16,6 +16,17 @@
     position: relative;
     margin: 0 auto;
 }
+.vertical-align {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.both-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .list-style-none {
     list-style: none;
 }
@@ -49,14 +60,19 @@
 }
 #mobile-nav {
     width: 250px;
-    transform: translateY(-150px);
+    transform: translateY(-250px);
     opacity: 0;
+    z-index: 999;
 }
 #mobile-nav {
     transition: 0.5s ease all;
 }
 .links:hover {
     background-color: #3b3b3b;
+}
+#logo-link {
+    display: block;
+    width: 200px;
 }
 /* showcase */
 #showcase {
@@ -66,3 +82,35 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 150px;
+    position: relative;
+}
+#iphone-pic {
+    width: 80px;
+    display: block;
+    float: right;
+}
+.innerwrap {
+    width: 70%;
+}
+#showcase-text {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+/* keyframes */
+#iphone-pic {
+    position: relative;
+    animation-name: slide-left;
+    animation-duration: 2s;
+}
+@keyframes slide-left {
+    0% {right: -200px; opacity: 0;}
+    100% {right: 0px; opacity: 1;}
+}
+#showcase-text {
+    animation-name: slide-down;
+    animation-duration: 2s;
+}
+@keyframes slide-down {
+    0% {top: -15px; opacity: 0;}
+    100% {top: 50%;opacity: 1;}
+}
