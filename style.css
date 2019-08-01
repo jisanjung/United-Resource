@@ -96,6 +96,38 @@
 #showcase-text {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
+/* services */
+.services {
+    grid-row: 13/18;
+    grid-column: 1/13;
+}
+.credit-score-service {
+    grid-row: 1/5;
+    grid-column: 1/13;
+}
+.notary-service {
+    grid-row: 5/10;
+    grid-column: 1/13;
+}
+.service-icons {
+    width: 130px;
+}
+.check-after-list::after {
+    display: inline-block;
+    content: "";
+    background: url("images/check.png");
+    background-size: 18px 18px;
+    width: 18px;
+    height: 18px;
+}
+/* footer */
+footer {
+    grid-row: 18/23;
+    grid-column: 1/13;
+}
+.social-icons {
+    width: 25px;
+}
 /* keyframes */
 #iphone-pic {
     position: relative;
