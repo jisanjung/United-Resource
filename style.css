@@ -100,6 +100,7 @@
 .services {
     grid-row: 13/18;
     grid-column: 1/13;
+    background-color: #e3e3e3;
 }
 .credit-score-service {
     grid-row: 1/5;
@@ -145,4 +146,23 @@ footer {
 @keyframes slide-down {
     0% {top: -15px; opacity: 0;}
     100% {top: 50%;opacity: 1;}
+}
+/* media queries */
+@media screen and (min-width: 475px) {
+    /* header */
+    .logo {
+        grid-column: 1/9;
+    }
+    .menu {
+        grid-column: 9/12;
+        grid-row: 1/5;
+    }
+    #mobile-menu {
+        transform: translateY(50px);
+    }
+    /* showcase */
+    #showcase {
+        height: 220px;
+        grid-row: 5/13;
+    }
 }
