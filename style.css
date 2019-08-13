@@ -3,6 +3,9 @@
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+body {
+    background-color: #f6f6f6;
+}
 .no-spacing {
     margin: 0;
     padding: 0;
@@ -42,7 +45,6 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-auto-rows: minmax(20px, auto);
-    background-color: #f6f6f6;
 }
 /* header */
 .logo {
@@ -111,6 +113,7 @@
 .notary-service {
     grid-row: 5/10;
     grid-column: 1/13;
+    margin-top: 14px;
 }
 .service-icons {
     width: 130px;
@@ -130,6 +133,15 @@ footer {
 }
 .social-icons {
     width: 25px;
+}
+footer p {
+    grid-column: 1/13;
+}
+footer ul {
+    grid-column: 1/13;
+    width: 85px;
+    margin: auto;
+    padding: 0;
 }
 /* keyframes */
 #iphone-pic {
@@ -182,4 +194,42 @@ footer {
         font-size: 1.5rem;
     }
     /* services */
+}
+@media screen and (min-width: 768px) {
+    /* header */
+    .logo {
+        grid-column: 1/10;
+    }
+    .menu {
+        grid-column: 10/13;
+    }
+    #logo-link {
+        left: 30%;
+    }
+    /* showcase */
+    #showcase {
+        height: 395px;
+    }
+    #iphone-pic {
+        width: 200px;
+    }
+    .innerwrap {
+        width: 400px;
+    }
+    /* services */
+    .credit-score-service {
+        grid-column: 1/7;
+    }
+    .notary-service {
+        grid-column: 7/13;
+        grid-row: 1/5;
+        margin-top: 0;
+    }
+    /* footer */
+    footer p {
+        grid-column: 1/7;
+    }
+    footer ul {
+        grid-column: 12/13;
+    }
 }
